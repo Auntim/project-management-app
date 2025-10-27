@@ -23,7 +23,7 @@ const syncUserCreation = inngest.createFunction(
 )
 
 
-// Function to delete user from Prisma when deleted from Clerk
+// Function to delete user from database when deleted from database
 const syncUserDelation = inngest.createFunction(
     { id: 'delete-user-from-clerk' },
     { event: 'clerk/user.deleted' },
